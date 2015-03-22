@@ -8,6 +8,8 @@ var Slackinator = require('../lib/slackinator.js')
 function getSlackMock() {
   var slack = new Slack('fake', true, true)
   simple.mock(slack, 'login', function() {return true})
+  simple.mock(slack, 'channels', [])
+  simple.mock(slack, 'groups', [])
   simple.mock(slack, 'on', function() { return null})
     
   return slack
