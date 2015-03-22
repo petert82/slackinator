@@ -1,0 +1,30 @@
+{
+  "name": "slackinator",
+  "version": "0.0.1",
+  "description": "A library for easily creating slack bots",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petert82/slackinator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/petert82/slackinator/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "slack",
+    "bot"
+  ],
+  "author": "Peter Thompson <peter.thompson@dunelm.org.uk> (http://www.petethompson.net)",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.5.0",
+    "slack-client": "^1.4.0"
+  },
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "simple-mock": "^0.2.9"
+  }
+}
