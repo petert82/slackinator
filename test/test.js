@@ -71,7 +71,7 @@ describe('Slackinator', function() {
       expect(Slackinator.createBot.bind(undefined, opts)).to.throw(Error, /does not have any "listenTo" channels defined/)
       opts.messageHandlers.testHandler.listenTo = ['#test-channel']
       opts.messageHandlers.testHandler.replyOn = undefined
-      expect(Slackinator.createBot.bind(undefined, opts)).to.throw(Error, /does not have any "replyOn" channels defined/)
+      expect(Slackinator.createBot.bind(undefined, opts)).to.not.throw()
       opts.messageHandlers.testHandler.replyOn = ['#test-channel']
       opts.messageHandlers.testHandler.match = undefined
       expect(Slackinator.createBot.bind(undefined, opts)).to.throw(Error, /does not have a "match" RegExp/)
